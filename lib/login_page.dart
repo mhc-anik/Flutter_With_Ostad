@@ -1,3 +1,4 @@
+import 'package:appanik/list_view.dart';
 import 'package:flutter/material.dart';
 
 class login_page extends StatelessWidget {
@@ -21,7 +22,7 @@ class login_page extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 50),
-            Center(child: Image.asset("asset/facebook.jpeg")),
+            Center(child: Image.asset("asset/LKL Logo.gif",height: 200,)),
             SizedBox(height: 30),
             Text(
               "Login with Phone and Password",
@@ -80,7 +81,7 @@ class login_page extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {
                           if(_formKey.currentState!.validate()){
-
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>listV(name: phoneController.text,)));
                           }
                         },
                         child: Text(
