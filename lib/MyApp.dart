@@ -11,13 +11,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-        title: "Anik's App",
+      title: "Anik's App",
       //  home: listV(),
       //  home: login_page(),
       //  home: gridV(),
-          home: stackV(),
-
-
+      home: stackV(),
     );
   }
 }

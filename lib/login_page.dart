@@ -8,7 +8,6 @@ class login_page extends StatelessWidget {
   TextEditingController phoneController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +21,7 @@ class login_page extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 50),
-            Center(child: Image.asset("asset/LKL Logo.gif",height: 200,)),
+            Center(child: Image.asset("asset/LKL Logo.gif", height: 200)),
             SizedBox(height: 30),
             Text(
               "Login with Phone and Password",
@@ -80,8 +79,14 @@ class login_page extends StatelessWidget {
                       width: 300,
                       child: ElevatedButton(
                         onPressed: () {
-                          if(_formKey.currentState!.validate()){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>listV(name: phoneController.text,)));
+                          if (_formKey.currentState!.validate()) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    listV(name: phoneController.text),
+                              ),
+                            );
                           }
                         },
                         child: Text(

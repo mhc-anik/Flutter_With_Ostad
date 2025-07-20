@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class listV extends StatefulWidget {
   final name;
-  const listV({super.key,required this.name});
-
+  const listV({super.key, required this.name});
 
   @override
   State<listV> createState() => _listVState();
@@ -28,7 +27,13 @@ class _listVState extends State<listV> {
             child: ListTile(
               leading: Icon(Icons.phone),
               trailing: Icon(Icons.delete, color: Colors.red),
-              title: Text('Anik',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blueAccent),),
+              title: Text(
+                'Anik',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueAccent,
+                ),
+              ),
               subtitle: Text(widget.name),
             ),
           );
