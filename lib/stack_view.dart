@@ -19,6 +19,11 @@ class _stackVState extends State<stackV> {
         ),
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          Text("this is Anik",style: TextStyle(fontSize: 30),),
+        ],
+      ),
     );
   }
 }
