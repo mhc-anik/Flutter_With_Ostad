@@ -1,8 +1,12 @@
 
 import 'package:appanik/Assainment_module_10/assainment_mod_10.dart';
 import 'package:appanik/Live_Test_Module_10/Live_Test_Module_10.dart';
+import 'package:appanik/Own_Widget/own_widget.dart';
 import 'package:appanik/aleart_dialog.dart';
 import 'package:appanik/basic_app.dart';
+import 'package:appanik/calculatorApp/calculator/calculator_app.dart';
+import 'package:appanik/calculatorApp/calculatorApp.dart';
+import 'package:appanik/counter_app.dart';
 import 'package:appanik/drawer_view.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +21,11 @@ class MyApp extends StatelessWidget {
       //home: Aleart_dailog(),
       //home: drawer_view(),
       //home: assainment_mod_10(),
-      home: Live_Test_Module_10(),
+      //home: Live_Test_Module_10(),
+      //home: own_widget(),
+      //home:counter_app(),
+      home: calculatorApp(),
+      //home: CalculatorApp(),
     );
   }
 }
